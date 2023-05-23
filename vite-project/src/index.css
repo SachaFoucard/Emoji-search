@@ -4,27 +4,16 @@
   grid-template-columns: repeat(4,1fr);
 
 }
-@media screen and (max-width:1000px){
-  .grid{
-    grid-template-columns: auto auto auto ;
-  }
-}
-@media screen and (max-width:810px){
-  .grid{
-    grid-template-columns: auto auto
-  }
-}
-@media screen and (max-width:500px){
-  .grid{
-    grid-template-columns: auto
-  }
-}
-body{
-  background-color: rgb(217, 217, 217);
+.input{
+  width: 400px;
+  height: 50px;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 5px;
 }
 .grid li{
   text-align: center;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 30px;
   list-style: none;
   padding: 20px;
@@ -36,6 +25,50 @@ body{
   font-size: 100px;
   background-color: aliceblue;
 }
+@media screen and (max-width:1000px){
+  .grid{
+    grid-template-columns: auto auto auto ;
+  }
+}
+@media screen and (max-width:810px){
+  .grid{
+    grid-template-columns: auto auto auto
+  }
+  .grid li{
+    width:100px;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width:500px){
+  .grid{
+    grid-template-columns: auto auto auto
+  }
+  .input{
+  height: 30px;
+  border: 1px solid black;
+  font-size: 10px;
+  padding: 5px;
+  text-align: center;
+}
+  .grid li{
+    width:50px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:400px){
+  .grid{
+    grid-template-columns: auto auto auto auto
+  }
+  .grid li{
+    width:50px;
+    font-size: 20px;
+  }
+}
+body{
+  background-color: rgb(217, 217, 217);
+}
+
+
 .iconpo path{
 color: rgb(84, 72, 72);
 }
@@ -46,7 +79,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   text-align: center;
-  padding-inline: 50px;
+  padding-inline: 12px;
 }
 .item{
   padding-top: 20px;
@@ -55,17 +88,12 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 path{
   color: rgb(182, 58, 191);
 }
-.input{
-  width: 400px;
-  height: 50px;
-  border: 1px solid black;
-  font-size: 20px;
-  padding: 5px;
-}
+
 p{
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
